@@ -43,8 +43,5 @@ public class DemoController {
         return new ResponseEntity<String>(personService.deletePersonById(personId),HttpStatus.OK);
     }
 
-    @GetMapping
-    public String display(){
-        return "say hello";
-    }
+
 }
