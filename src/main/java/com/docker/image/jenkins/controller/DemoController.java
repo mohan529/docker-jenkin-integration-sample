@@ -40,11 +40,11 @@ public class DemoController {
 
     @DeleteMapping("/delete/{personId}")
     public ResponseEntity<String> deletePersonById(@PathVariable String personId){
-        return new ResponseEntity<>(personService.deletePersonById(personId),HttpStatus.OK);
+        return new ResponseEntity<String>(personService.deletePersonById(personId),HttpStatus.OK);
     }
 
     @GetMapping
     public String display(){
-        return "say hello to your friends";
+        return "say hello";
     }
 }
